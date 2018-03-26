@@ -1,0 +1,208 @@
+*{
+  box-sizing: border-box;
+}
+
+body {
+  background: #F4E5C2;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+/*cabecera*/
+
+.container {
+  width: 90vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.header-logo  {
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 8rem;
+}
+
+.social-logo img {
+  width: 5rem;
+  height: 5rem;
+}
+
+.banner {
+
+background-image: url("../images/banner.jpg");
+background-size: cover;
+height: 23rem;
+position: relative;
+}
+
+.banner::after {
+  content: "";
+  width: 98%;
+  height: 10%;
+  background: black;
+  position: absolute;
+  bottom: 0;
+  left: 1%;
+  box-shadow: 0px 7px 10px  #4D4545;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+/*fin cabecera*/
+
+/*articulos*/
+
+.article {
+  color: #363636;
+  background-color: white;
+  padding: 2rem;
+  margin-top: 2rem;
+  position: relative;
+  /* height: 20rem; */
+}
+
+.sombra {
+  position: relative;
+
+}
+
+.sombra::after {
+  content: "";
+  width: 98%;
+  height: 10%;
+  background: black;
+  position: absolute;
+  bottom: 0;
+  left: 1%;
+  box-shadow: 0px 7px 10px  #4D4545;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+
+
+
+.title-brown {
+  color: #703B3B;
+}
+
+.button {
+  background: #703B3B;
+  color: white;
+  padding: 0.3rem 2.5rem;
+  text-decoration: none;
+  font-family: 'Farsan', cursive;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.article-img {
+  display: flex;
+  justify-content: space-between;
+}
+
+.art{
+  width: 50%;
+}
+
+.imagen {
+  background-size: cover;
+  background-repeat: no-repeat;
+  width:50%;
+}
+
+.imagen-1 {
+    background-image: url("../images/campo.jpg");
+}
+
+.imagen-2 {
+    background-image: url("../images/planta.jpg");
+}
+
+/*fin articulos*/
+/*bloque contactor*/
+  .info {
+    font-size: 0.7rem;
+  }
+
+  .info a {
+    color: #363636;
+  }
+
+  .social-networs a{
+
+    font-size: 3rem;
+    text-decoration: none;
+
+  }
+
+
+
+  .fa-twitter-square{
+    color: #11CBD7;
+  }
+
+  .fa-facebook-square{
+    color: #22559C;
+  }
+
+  .fa-youtube-square{
+    color: #F27370;
+  }
+
+  .fab {
+    transition: all 0.5s;
+  }
+
+  .fab:hover{
+    color: black;
+    font-size: 3.2rem;
+  }
+
+  .derechos-reservados {
+    font-style: italic;
+    color: #4E413B;
+    text-align: right;
+  }
+
+
+
+  .derechos-reservados a {
+    color: #4E413B;
+  }
+
+
+
+  .contacto {
+    display: flex;
+    justify-content:space-around;
+  }
+
+  .social-networs {
+    display: flex;
+
+  }
+
+  .contacto-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 0.7rem;
+  }
+
+.siguenos {
+  font-weight: bold;
+  font-style: italic;
+  font-size: 1rem;
+}
+/*fin bloque contacto*/
+
+.footer p{
+  text-align: center;
+  font-size: 0.8rem;
+  margin-top: 2rem;
+}
