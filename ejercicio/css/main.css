@@ -12,7 +12,7 @@ body {
 /*cabecera*/
 
 .container {
-  width: 90vw;
+  width: 960px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -32,11 +32,12 @@ body {
 }
 
 .banner {
-
 background-image: url("../images/banner.jpg");
 background-size: cover;
-height: 40rem;
+height: 100vh;
+background-repeat: no-repeat;
 position: relative;
+background-position: top right;
 }
 
 .banner::after {
@@ -69,6 +70,7 @@ position: relative;
   position: relative;
 
 }
+
 
 .sombra::after {
   content: "";
