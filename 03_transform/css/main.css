@@ -1,0 +1,86 @@
+#c1{
+  width: 200px;
+  height: 100px;
+  background-color: yellow;
+
+  transform: rotate(7deg);
+}
+
+aside {
+  width: 50px;
+  height: 50px;
+  background-color: teal;
+  margin-bottom: 2rem;
+}
+
+.transformado {
+  /*escalar*/
+  transform: scale(2);
+  background-color: blue;
+  margin-left: 2rem;
+  margin-bottom: 5rem;
+}
+
+.cdr2 {
+  width: 500px;
+  height: 300px;
+  transform: skew(20deg, 10deg);
+  /*transform: skewX(20deg);*/
+
+  background-color: tomato;
+}
+/* transform:matrix */
+#d1 {
+  width: 300px;
+  height: 100px;
+  background-color: yellow;
+  border: 1px solid black;
+}
+
+#d2{
+  width: 300px;
+  height: 100px;
+  background-color: yellow;
+  border: 1px solid black;
+  transform:  matrix(1, -0,3, 0, 1, 0, 0);
+}
+
+#d3{
+  width: 300px;
+  height: 100px;
+  border-spacing: yellow;
+  border: 1px solid black;
+  -ms-transform:  matrix(1, 0, 0.5, 1, 150, 0);
+  -webkit-transform:  matrix(1, 0, 0.5, 1, 150, 0);
+  transform:  matrix(1, 0, 0.5, 1, 150, 0);
+
+}
+
+
+/* transition */
+#d4{
+  width: 100px;
+  height: 100px;
+  background:  red;
+  -webkit-transition: width 2s;
+  transition: width 2s;
+}
+
+#d4:hover {
+  width: 300px;
+}
+
+.box{
+  width:  150px;
+  height: 150px;
+  background: red;
+  margin-top:  20px;
+  margin-left: auto;
+  margin-right: auto;
+  transition: background-color 2s ease-out;
+}
+
+.box:hover {
+  background-color: green;
+  cursor: pointer;
+}
