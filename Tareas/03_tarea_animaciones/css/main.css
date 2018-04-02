@@ -1,0 +1,49 @@
+body {
+  background-color: teal;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-weight: bold;
+  font-style: italic;
+  text-align: center;
+}
+
+.centrar {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  width: 350px;
+  height: 350px;
+  background-color: tomato;
+  -webkit-animation-name: ejercicio1;
+  -moz-animation-name: ejercicio1;
+  -o-animation-name: ejercicio1;
+  animation-name: ejercicio1;
+  animation-duration: 2s;
+}
+
+@-webkit-keyframes ejercicio1 {
+  from {background-color: tomato}
+  to {background-color: blue}
+}
+
+@-moz-keyframes ejercicio1 {
+  from {background-color: tomato}
+  to {background-color: blue}
+}
+
+@-o-keyframes ejercicio1 {
+  from {background-color: tomato}
+  to {background-color: blue}
+}
+
+@keyframes ejercicio1 {
+  from {background-color: tomato}
+  to {background-color: blue}
+}

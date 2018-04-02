@@ -1,0 +1,55 @@
+body {
+  background-color: gold;
+}
+
+h1{
+  font-weight: bold;
+  text-align: center;
+  margin: 5rem 0;
+  color: green;
+}
+
+.container{
+  width: 80vw;
+  height: 100vh;
+  margin: auto;
+}
+
+.centrado-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  width: 350px;
+	height: 350px;
+  -webkit-animation: girar 10s linear infinite;
+  -moz-animation: girar 10s linear infinite;
+  -o-animation: girar 10s linear infinite;
+	animation: girar 10s linear infinite;
+}
+
+@-webkit-keyframes girar {
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+@-moz-keyframes girar {
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+@-o-keyframes girar {
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes girar {
+	to {
+		transform: rotate(360deg);
+	}
+}
