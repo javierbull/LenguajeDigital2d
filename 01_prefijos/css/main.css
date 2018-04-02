@@ -1,0 +1,57 @@
+#grad{
+  width: 400px;
+  height: 400px;
+  margin: 0 auto;
+  background: red;
+  background: -webkit-linear-gradient(red, yellow, green);
+  background: -o-linear-gradient(red, yellow, green);
+  background: -moz-linear-gradient(red, yellow, green);
+
+  background: linear-gradient(red, yellow, green);
+}
+
+p::first-line{
+  color: bold;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+p::first-letter{
+  color: yellow;
+
+}
+
+p::before{
+  content: "Capitulo 1";
+  color: red;
+}
+
+p::after{
+  content: "";
+}
+
+::selection{
+  color:  red;
+  background: yellow;
+}
+
+::-moz-selection{
+  color:  red;
+  background: yellow;
+}
+
+#cuadro1{
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  background-color: orange;
+  width: 300px;
+  height: 300px;
+}
+
+#cuadro2{
+  -webkit-border-top-left-radius: 50px;
+  -moz-border--bottom-radius: 50px;
+  background-color: red;
+  width: 300px;
+  height: 300px;
+}

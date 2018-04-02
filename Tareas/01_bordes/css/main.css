@@ -1,0 +1,56 @@
+body {
+  background-color: #194769;
+  font-family: 'Permanent Marker', cursive;
+}
+
+.container{
+  padding: 100px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.A, .B, .C, .D {
+  background: #C51350;
+  width: 400px;
+  height: 100px;
+  color: white;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+}
+
+
+
+.A {
+  border-bottom-right-radius: 50% 100px;
+}
+
+.B {
+  border-bottom-right-radius: 30% 40px;
+}
+
+.C{
+  border-bottom-right-radius: 15% 100px;
+}
+
+.D{
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 30% 100px ;
+  border-bottom-left-radius: 30% 100px;
+}
+
+.E {
+  background: #C51350;
+  width: 100px;
+  height: 100px;
+  color: white;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  border-radius: 50%;
+}
