@@ -1,0 +1,38 @@
+body {
+  background-color: #EDE862;
+}
+
+h1{
+  font-weight: bold;
+  margin: 5rem 0;
+  color: tomato;
+  text-align: center;
+}
+
+.container{
+  width: 1000px;
+  height: 100vh;
+  margin: auto;
+}
+
+.prueba2 {
+  margin: 10px;
+  width: 200px;
+  height: 200px;
+  background-color: #f00;
+  border: 1px solid #666;
+  transition-property: width, height, background-color;
+  transition-duration: 0.5s, 1s, 1s;
+  transition-timing-function: ease, ease-out;
+  transition-delay: 0s, 0.5s, 1,5s;
+}
+
+.prueba2:hover {
+  width: 400px;
+  height: 300px;
+  background-color: #fc0;
+  transition-property: width, height, background-colot;
+  transition-duration: 0.5s, 0.5s, 0.5s;
+  transition-timing-function: linear, linear;
+  transition-delay: 0s, 0.5s, 0.5s;
+}

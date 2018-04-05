@@ -1,0 +1,38 @@
+body {
+  background-color: #EDE862;
+}
+
+h1{
+  font-weight: bold;
+  margin: 5rem 0;
+  color: tomato;
+  text-align: center;
+}
+
+.container{
+  width: 1000px;
+  height: 100vh;
+  margin: auto;
+}
+
+.ninoconyoyo {
+  display: flex;
+}
+
+.nino {
+  position: relative;
+
+}
+
+.yoyo{
+  position: absolute;
+  height: 200px;
+  left: 153px;
+  top: 280px;
+  transition: all 1s;
+}
+
+.yoyo:hover {
+  height: 300px;
+  transition: all 2s ease;
+}

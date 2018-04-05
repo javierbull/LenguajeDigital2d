@@ -1,0 +1,30 @@
+body {
+  background-color: #EDE862;
+}
+
+h1{
+  font-weight: bold;
+  margin: 5rem 0;
+  color: tomato;
+  text-align: center;
+}
+
+.container{
+  width: 1000px;
+  height: 100vh;
+  margin: auto;
+}
+
+.divprueba div {
+  height: 100px;
+  width: 100px;
+  border: 1px solid #f00;
+  margin: 10px auto;
+  background:  #ccc;
+  text-align: center;
+  transition:  all 2s ease-in-out;
+}
+
+.divprueba div:hover, #divloco div.hover_effect {
+  transform: rotate(720deg) scale(2,2);
+}
