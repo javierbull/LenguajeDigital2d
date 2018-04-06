@@ -1,0 +1,85 @@
+body {
+  background-color: #FBF0F0;
+}
+
+h1{
+  font-weight: bold;
+  margin: 5rem 0;
+  color: tomato;
+  text-align: center;
+}
+
+.container {
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.dflex {
+  display: flex;
+  justify-content: center;
+}
+
+.circle, .circle2, .circle3, .circle3, .circle4,.circle5,.circle6,.circle7,.circle8,.circle9,.circle10 {
+  width: 100px;
+  height: 100px;
+  margin: 1rem;
+  background: url("../images/circulo.png");
+
+}
+
+.circle, .circle2 {
+  transition: all 1s ease-in-out ;
+}
+
+.circle3 {
+  transition: all 7s ease-in-out;
+}
+
+.circle4 {
+  transition: all 3s ease-in-out;
+}
+
+.circle5, .circle6, .circle7, .circle8, .circle9, .circle10 {
+  transition: all 1s ease-in-out;
+}
+
+.circle:hover {
+  transform: rotate(360deg);
+}
+
+.circle2:hover {
+  transform: rotate(-360deg);
+}
+
+.circle3:hover {
+  transform: rotate(360deg);
+}
+
+.circle4:hover {
+  transform: rotate(-360deg);
+}
+
+.circle5:hover {
+  transform: translate(50px, 100px);
+}
+
+.circle6:hover {
+  transform: scale(2, 2);
+}
+
+.circle7:hover {
+  transform: scale(0.5, 0.5);
+}
+
+.circle8:hover {
+  transform: skewX(20deg);
+}
+
+.circle9:hover {
+  transform: skewY(-20deg);
+}
+
+.circle10:hover {
+  transform: rotateY(150deg); 
+}

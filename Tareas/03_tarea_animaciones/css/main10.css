@@ -1,0 +1,42 @@
+body {
+  background-color: #FBF0F0;
+}
+
+h1{
+  font-weight: bold;
+  margin: 5rem 0;
+  color: tomato;
+  text-align: center;
+}
+
+.circle {
+  width: 100px;
+  height: 100px;
+  background: url("../images/circulo.png");
+  animation: spin 1s linear infinite;
+  animation-delay: 2s;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  animation: random-move;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  position: relative;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes random-move {
+  0%{left: 0px; top: 0px;}
+  25%{left: 800px; top: 0px;}
+  50%{left: 200px; top: 200px;}
+  75%{left: 70px; top: 200px;}
+  100%{left: 50px; top: 50px;}
+}

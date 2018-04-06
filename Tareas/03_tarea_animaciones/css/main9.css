@@ -1,0 +1,136 @@
+body {
+  background-color: #EDE862;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1{
+  font-weight: bold;
+  margin: 20px 0;
+  color: tomato;
+  text-align: center;
+}
+
+.fondo {
+  width: 950px;
+  height: 500px;
+  margin: 0;
+  padding: 0;
+  background: url("../images/background.png");
+  background-repeat: no-repeat;
+  position:relative;
+}
+
+.cloud {
+  width: 0px;
+  height: 75px;
+  background: url("../images/cloud.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  position: absolute;
+  top: 30px;
+  left: 950px;
+  z-index: 20;
+
+  /* animacion default */
+  animation-name: cloud-animation;
+  animation-duration: 20s;
+  animation-delay: 2s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-direction: normal;
+}
+
+
+.sun {
+  width: 70px;
+  height: 70px;
+  background: url("../images/sun.png");
+  opacity: 0.1;
+  position: absolute;
+  top: 50px;
+  left: 700px;
+
+  /* defaul animation */
+  animation-name: sun-animation;
+  animation-delay: 20s;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.flower {
+  width: 90px;
+  height: 130px;
+  background-image: url("../images/flower.png");
+  background-repeat: no-repeat;
+  background-position:0 150px;
+  position: absolute;
+  bottom: 5px;
+  left: 430px;
+
+  /* defaul animation */
+  animation-name: flower-animation;
+  animation-duration: 3s;
+  animation-delay: 23s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+}
+
+/* animation cloud */
+
+@keyframes cloud-animation {
+    0% {
+        left: 950px;
+    }
+
+    10% {
+        left: 750px;
+        width: 200px;
+    }
+
+    30% {
+        left: 375px;
+    }
+
+    60% {
+        left: 375px;
+    }
+
+    85% {
+        left: 0;
+        width: 200px;
+        background-position: 0 0;
+    }
+
+    100% {
+        left: 0;
+        width: 0;
+        background-position: -200px 0;
+    }
+}
+
+/* ANIMATION SUN */
+
+@keyframes sun-animation {
+  100% {
+    opacity: 1;
+  }
+}
+
+/* ANIMATION FLOWER */
+
+@keyframes flower-animation {
+  100% {
+    background-position: 0 0;
+  }
+}

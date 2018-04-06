@@ -1,0 +1,78 @@
+body {
+  background-color: #76B39D;
+}
+
+h1{
+  font-weight: bold;
+  margin: 5rem 0;
+  color: tomato;
+  text-align: center;
+  text-shadow: 10px 10px 5px #28544B;
+  font-size: 3rem;
+  transition: all 1s ease-in-out;
+}
+
+h1:hover {
+  transform: scale(1.5, 1.5);
+}
+
+.container{
+  width: 90vw;
+  margin: auto;
+}
+
+.dflex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.foto {
+  width: 220px;
+  height: 260px;
+  background-color: white;
+  box-shadow: 10px 10px 5px #28544B;
+  margin: 2rem;
+}
+
+.foto img {
+  margin: 10px;
+}
+
+.foto p {
+  text-align: center;
+  margin-top: -0.2rem;
+}
+
+ .gato {
+   transform: rotate(-8deg);
+
+ }
+
+ .gato, .pizza, .ocaso, .moto, .pelota, .cubo {
+   transition: all 1s ease-in-out;
+ }
+
+ .gato:hover, .pizza:hover, .ocaso:hover, .moto:hover, .pelota:hover, .cubo:hover {
+   transform: scale(1.2, 1.2);
+ }
+
+ .pizza {
+   transform: rotate(-5deg);
+ }
+
+ .ocaso {
+   transform: rotate(2deg);
+ }
+
+ .moto {
+   transform: rotate(-3deg);
+ }
+
+ .pelota {
+   transform: rotate(7deg);
+ }
+
+ .cubo {
+   transform: rotate(-4deg);
+ }
