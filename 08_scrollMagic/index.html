@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <title>Scroll Magic</title>
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+      <div id="content-wrapper">
+        <div id="example-wrapper">
+          <div class="scrollContent">
+            <section id="tittlechart">
+              <div class="description">
+                <h1 class="badge gsap">Simple Tweening</h1>
+                <h2>2 ejemplos de animación</h2>
+              </div>
+            </section>
+
+            <section class="demo">
+              <div class="spacer s2"></div>
+              <div id="trigger1" class="spacer s0"></div>
+              <div id="animate1" class="box2 skin">
+                <p>You wouldn't like me, when I´m angry</p>
+              </div>
+              <div class="spacer s2"></div>
+            </section>
+
+            <section class="demo">
+              <div class="spacer s1"></div>
+              <div id="trigger2" class="spacer s1"></div>
+              <div class="spacer s0"></div>
+              <div id="animate2" class="box1 black">
+                <p>Smurf me!</p>
+              </div>
+              <div class="spacer s2"></div>
+            </section>
+
+            <div class="spacer s_viewport"></div>
+
+          </div>
+        </div>
+      </div>
+
+  <script type="text/javascript" src="js/lib/greensock/tweenMax.min.js"></script>
+  <script type="text/javascript" src="js/scrollmagic/uncompressed/ScrollMagic.js"></script>
+  <script type="text/javascript" src="js/scrollmagic/uncompressed/plugins/animation.gsap.js"></script>
+  <script type="text/javascript">
+    //init controler
+    var controller = new ScrollMagic.Controller();
+    //build scene
+    var scene = new ScrollMagic.Scene(
+      {triggerElement: "#trigger1"}
+    )
+      .setTween("#animate1", 0.5, {backgroundColor:"green", scale: 2.5})
+      .addTo(controller);
+    //build scene
+    var scene = new ScrollMagic.Scene(
+      {triggerElement: "#trigger2", duration: 300}
+    )
+      .setTween("#animate2", {borderTop: "30px solid white", backgroundColor: "blue", scale: 0.7} )
+      .addTo(controller);
+  </script>
+  </body>
+</html>
