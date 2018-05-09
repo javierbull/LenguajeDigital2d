@@ -1,0 +1,16 @@
+body {
+  background: #E8FFC1;
+  width: 960px;
+  margin: auto;
+  box-sizing: border-box;
+}
+
+.panel {
+  height: 200px;
+  width:  300px;
+  background: green;
+}
+
+.green {
+  margin-bottom: 400px;
+}
