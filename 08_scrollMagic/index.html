@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
+
+
       <div id="content-wrapper">
         <div id="example-wrapper">
           <div class="scrollContent">
@@ -45,6 +47,7 @@
   <script type="text/javascript" src="js/lib/greensock/tweenMax.min.js"></script>
   <script type="text/javascript" src="js/scrollmagic/uncompressed/ScrollMagic.js"></script>
   <script type="text/javascript" src="js/scrollmagic/uncompressed/plugins/animation.gsap.js"></script>
+  <script type="text/javascript" src="js/scrollmagic/uncompressed/plugins/debug.addIndicators.js"></script>
   <script type="text/javascript">
     //init controler
     var controller = new ScrollMagic.Controller();
@@ -53,12 +56,14 @@
       {triggerElement: "#trigger1"}
     )
       .setTween("#animate1", 0.5, {backgroundColor:"green", scale: 2.5})
+      .addIndicators()
       .addTo(controller);
     //build scene
     var scene = new ScrollMagic.Scene(
-      {triggerElement: "#trigger2", duration: 300}
+      {triggerElement: "#trigger2", duration: 200}
     )
       .setTween("#animate2", {borderTop: "30px solid white", backgroundColor: "blue", scale: 0.5} )
+        .addIndicators()
       .addTo(controller);
   </script>
   </body>
