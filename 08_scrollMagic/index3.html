@@ -29,16 +29,9 @@
     <script type="text/javascript" src="js/lib/modernizr.custom.min.js"></script>
     <script type="text/javascript" src="js/scrollmagic/uncompressed/plugins/debug.addIndicators.js"></script>
 
-    <script type="text/javascript">
-    // init controller
-    var controller = new ScrollMagic.Controller();
-      //build Scene
-      var scene = new ScrollMagic.Scene({
-                triggerElement: "#frame"
-              })
-              .setTween("#frame", 1, {borderRadius: "50%", backgroundColor:"green", scale: 1.5}) // trigger a TweenMax.to tween
-              .addIndicators({name: "1 (duration: 0)"}) // add indicators (requires plugin)
-              .addTo(controller);
+
+    <script type="text/javascript" src="js/main.js">
+
     </script>
   </body>
 </html>
